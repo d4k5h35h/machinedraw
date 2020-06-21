@@ -36,7 +36,6 @@ function mouseReleased() {
 
 function setup() {
   createCanvas(800, 600);
-  frameRate(24);
 }
 
 function epiCycles(x, y, rotation, fourier) {
@@ -61,7 +60,7 @@ function epiCycles(x, y, rotation, fourier) {
 
 function draw() {
   background(0);
-
+  frameRate(24);    
   if (state == USER) {
     let point = createVector(mouseX - width / 2, mouseY - height / 2);
     drawing.push(point);
