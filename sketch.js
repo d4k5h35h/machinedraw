@@ -36,6 +36,7 @@ function mouseReleased() {
 
 function setup() {
   createCanvas(800, 600);
+  frameRate(24);
 }
 
 function epiCycles(x, y, rotation, fourier) {
